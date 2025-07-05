@@ -233,6 +233,6 @@ Populate your application with sample data:
 
 **Made with ❤️ for better financial management**
 
-[🚀 Try Live Demo](https://personalfinancevisualizer-gamma.vercel.app/) • [⭐ Star on GitHub](https://github.com/yourusername/personal-finance-visualizer)
+[🚀 Try Live Demo](https://personalfinancevisualizer-gamma.vercel.app/) • [⭐ Star on GitHub](https://github.com/bhaktofmahakal/personalfinancevisualizer)
 
 </div>
