@@ -9,7 +9,6 @@ interface CategoryPieChartProps {
   transactions: ITransaction[];
 }
 
-// Colors for the pie chart - using our palette colors
 const COLORS = [
   '#2C5DA9', // Sapphire medium
   '#C46C45', // Amber medium
@@ -41,13 +40,13 @@ export function CategoryPieChart({ transactions }: CategoryPieChartProps) {
       categoryMap.set(category, currentAmount + transaction.amount);
     });
 
-    // Convert map to array for the chart
+
     const data = Array.from(categoryMap.entries()).map(([name, value]) => ({
       name,
       value: parseFloat(value.toFixed(2)),
     }));
 
-    // Sort by value descending
+
     data.sort((a, b) => b.value - a.value);
 
     setChartData(data);

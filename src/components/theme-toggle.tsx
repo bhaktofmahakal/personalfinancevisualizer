@@ -3,7 +3,7 @@
 import { Moon, Sun } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-// Use the correct path with the alias
+
 import {
   DropdownMenu,
   DropdownMenuContent,

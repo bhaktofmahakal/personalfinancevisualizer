@@ -4,83 +4,83 @@
  
 @layer base {
   :root {
-    /* Base colors - using Ivory Mint for general UI */
-    --background: 0 0% 100%; /* #FFFFFF */
-    --foreground: 0 0% 17%; /* #2B2B2B */
+    /* using Ivory Mint for general UI */
+    --background: 0 0% 100%; 
+    --foreground: 0 0% 17%; 
 
     /* Cards - using Crimson Smoke (light) */
-    --card: 0 50% 93%; /* #F2C9C9 */
-    --card-foreground: 0 50% 14%; /* #3B0A0A */
+    --card: 0 50% 93%; 
+    --card-foreground: 0 50% 14%; 
  
     /* Popovers - using Golden Bloom */
-    --popover: 48 100% 91%; /* #FFF3D1 */
-    --popover-foreground: 35 30% 23%; /* #4D3F29 */
+    --popover: 48 100% 91%;
+    --popover-foreground: 35 30% 23%;
  
     /* Primary - using Sapphire Drift for buttons/CTAs */
-    --primary: 220 59% 35%; /* #2C5DA9 */
-    --primary-foreground: 213 89% 89%; /* #C8DAF9 */
+    --primary: 220 59% 35%;
+    --primary-foreground: 213 89% 89%;
  
     /* Secondary - using Ivory Mint */
-    --secondary: 157 50% 88%; /* #D1F0E0 */
-    --secondary-foreground: 165 25% 37%; /* #96C7B9 */
+    --secondary: 157 50% 88%;
+    --secondary-foreground: 165 25% 37%;
  
     /* Muted - using Pine Fog */
-    --muted: 110 10% 86%; /* #DAE3D7 */
-    --muted-foreground: 140 15% 38%; /* #5B7768 */
+    --muted: 110 10% 86%;
+    --muted-foreground: 140 15% 38%;
  
     /* Accent - using Mauve Satin */
-    --accent: 255 65% 85%; /* #DCD6F7 */
-    --accent-foreground: 255 55% 43%; /* #A593E0 */
+    --accent: 255 65% 85%;
+    --accent-foreground: 255 55% 43%;
  
     /* Destructive - using Velvet Sunset */
-    --destructive: 335 53% 51%; /* #AF5279 */
-    --destructive-foreground: 35 100% 82%; /* #FFD6A5 */
+    --destructive: 335 53% 51%;
+    --destructive-foreground: 35 100% 82%;
 
     /* Borders and inputs */
-    --border: 140 15% 38% / 0.2; /* #5B7768 with opacity */
-    --input: 140 15% 38% / 0.2; /* #5B7768 with opacity */
-    --ring: 220 59% 35%; /* #2C5DA9 */
+    --border: 140 15% 38% / 0.2;
+    --input: 140 15% 38% / 0.2;
+    --ring: 220 59% 35%;
  
     --radius: 0.5rem;
   }
  
   .dark {
     /* Base colors - using Noir Lavender for dashboard */
-    --background: 0 0% 5%; /* #0D0D0D */
-    --foreground: 260 50% 89%; /* #CBBBF6 */
+    --background: 0 0% 5%
+    --foreground: 260 50% 89%; 
  
     /* Cards - using dark tones */
-    --card: 0 0% 10%; /* #1A1A1A */
-    --card-foreground: 260 50% 89%; /* #CBBBF6 */
+    --card: 0 0% 10%; 
+    --card-foreground: 260 50% 89%; 
  
     /* Popovers - using dark tones */
-    --popover: 0 0% 10%; /* #1A1A1A */
-    --popover-foreground: 260 50% 89%; /* #CBBBF6 */
+    --popover: 0 0% 10%;
+    --popover-foreground: 260 50% 89%; 
  
     /* Primary - using Sapphire Drift */
-    --primary: 220 59% 35%; /* #2C5DA9 */
-    --primary-foreground: 213 89% 89%; /* #C8DAF9 */
+    --primary: 220 59% 35%; 
+    --primary-foreground: 213 89% 89%;
  
     /* Secondary - using Pine Fog */
-    --secondary: 140 15% 14%; /* #1F2A24 */
-    --secondary-foreground: 110 10% 86%; /* #DAE3D7 */
+    --secondary: 140 15% 14%;
+    --secondary-foreground: 110 10% 86%; 
  
     /* Muted - using darker tones */
-    --muted: 140 15% 14%; /* #1F2A24 */
-    --muted-foreground: 140 15% 38%; /* #5B7768 */
+    --muted: 140 15% 14%; 
+    --muted-foreground: 140 15% 38%; 
  
     /* Accent - using Mauve Satin */
-    --accent: 260 30% 42%; /* #5F4B8B */
-    --accent-foreground: 260 50% 89%; /* #CBBBF6 */
+    --accent: 260 30% 42%; 
+    --accent-foreground: 260 50% 89%; 
  
     /* Destructive - using Velvet Sunset */
-    --destructive: 335 53% 51%; /* #AF5279 */
-    --destructive-foreground: 35 100% 82%; /* #FFD6A5 */
+    --destructive: 335 53% 51%;
+    --destructive-foreground: 35 100% 82%; 
  
     /* Borders and inputs */
-    --border: 140 15% 38% / 0.4; /* #5B7768 with opacity */
-    --input: 140 15% 38% / 0.4; /* #5B7768 with opacity */
-    --ring: 213 89% 89%; /* #C8DAF9 */
+    --border: 140 15% 38% / 0.4; 
+    --input: 140 15% 38% / 0.4;
+    --ring: 213 89% 89%; 
   }
 }
  

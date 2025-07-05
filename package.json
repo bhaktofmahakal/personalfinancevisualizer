@@ -1,6 +1,7 @@
 {
   "name": "personal-finance-visualizer",
   "version": "0.1.0",
+  "author": "utsav mishra",
   "private": true,
   "scripts": {
     "dev": "next dev",

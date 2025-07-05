@@ -4,7 +4,7 @@ export interface IBudget {
   _id?: string;
   category: string;
   amount: number;
-  month: string; // Format: YYYY-MM
+  month: string; 
   createdAt?: Date;
   updatedAt?: Date;
 }
@@ -37,7 +37,7 @@ const budgetSchema = new Schema<IBudget>(
   }
 );
 
-// Create a compound index to ensure uniqueness of category and month
+// Create a compound index
 budgetSchema.index({ category: 1, month: 1 }, { unique: true });
 
 const Budget = models.Budget || mongoose.model<IBudget>('Budget', budgetSchema);

@@ -19,7 +19,7 @@ export function MonthlyExpensesChart({ transactions }: MonthlyExpensesChartProps
       return;
     }
 
-    // Get the last 6 months
+    //lastt 6 months
     const today = new Date();
     const sixMonthsAgo = subMonths(today, 5);
     
@@ -33,13 +33,13 @@ export function MonthlyExpensesChart({ transactions }: MonthlyExpensesChartProps
       const monthEnd = endOfMonth(month);
       const monthName = format(month, 'MMM yyyy');
 
-      // Filter transactions for this month
+  
       const monthTransactions = transactions.filter(transaction => {
         const transactionDate = new Date(transaction.date);
         return transactionDate >= monthStart && transactionDate <= monthEnd;
       });
 
-      // Sum up the transactions
+      // Sum 
       const total = monthTransactions.reduce((sum, transaction) => sum + transaction.amount, 0);
 
       return {

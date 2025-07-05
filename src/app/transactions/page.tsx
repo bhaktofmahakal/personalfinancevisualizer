@@ -12,13 +12,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
+  
 } from '@/components/ui/table';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { TransactionForm } from '@/components/transaction-form';
@@ -76,7 +71,7 @@ export default function TransactionsPage() {
         description: 'The transaction has been deleted successfully.',
       });
 
-      // Remove the deleted transaction from the state
+      // Remove the deleted transaction
       setTransactions(transactions.filter(t => t._id !== id));
     } catch (error) {
       console.error('Error deleting transaction:', error);

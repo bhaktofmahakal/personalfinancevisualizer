@@ -10,7 +10,7 @@ import { IBudget } from '@/lib/models/budget';
 interface BudgetComparisonChartProps {
   transactions: ITransaction[];
   budgets: IBudget[];
-  month: string; // Format: YYYY-MM
+  month: string; 
 }
 
 export function BudgetComparisonChart({ transactions, budgets, month }: BudgetComparisonChartProps) {
@@ -22,7 +22,7 @@ export function BudgetComparisonChart({ transactions, budgets, month }: BudgetCo
       return;
     }
 
-    // Filter transactions for the selected month
+    // Filter transactions
     const monthTransactions = transactions.filter(transaction => {
       const transactionDate = new Date(transaction.date);
       const transactionMonth = format(transactionDate, 'yyyy-MM');
@@ -47,10 +47,10 @@ export function BudgetComparisonChart({ transactions, budgets, month }: BudgetCo
       }
     });
 
-    // Combine data for chart
+
     const combinedData: any[] = [];
     
-    // Add categories with budgets
+
     categoryBudgets.forEach((budgetAmount, category) => {
       combinedData.push({
         category,
@@ -59,7 +59,7 @@ export function BudgetComparisonChart({ transactions, budgets, month }: BudgetCo
       });
     });
     
-    // Add categories without budgets but with spending
+
     categorySpending.forEach((spendAmount, category) => {
       if (!categoryBudgets.has(category)) {
         combinedData.push({
