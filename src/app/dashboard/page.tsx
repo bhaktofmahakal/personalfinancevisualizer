@@ -25,15 +25,53 @@ export default function DashboardPage() {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await fetch('/api/transactions');
+      // Use absolute URL to ensure correct path resolution
+      const baseUrl = window.location.origin;
+      const apiUrl = `${baseUrl}/api/transactions`;
+      console.log('Client: Fetching transactions from:', apiUrl);
+      
+      const response = await fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
+      
+      console.log('Client: Response status:', response.status);
+      
       if (!response.ok) {
-        throw new Error('Failed to fetch transactions');
+        let errorMessage = `Server responded with status: ${response.status}`;
+        
+        try {
+          // Try to get more detailed error from response
+          const errorData = await response.json();
+          if (errorData && errorData.error) {
+            errorMessage = `${errorMessage} - ${errorData.error}`;
+            if (errorData.message) {
+              errorMessage = `${errorMessage}: ${errorData.message}`;
+            }
+          }
+        } catch (e) {
+          // If response is not JSON, try to get text
+          try {
+            const errorText = await response.text();
+            if (errorText) {
+              errorMessage = `${errorMessage} - ${errorText}`;
+            }
+          } catch (textError) {
+            // If we can't get text either, just use the status
+          }
+        }
+        
+        throw new Error(errorMessage);
       }
+      
       const data = await response.json();
+      console.log('Client: Transactions loaded successfully:', data.length);
       setTransactions(data);
     } catch (error) {
-      console.error('Error fetching transactions:', error);
-      setError('Failed to load transactions. Please try again.');
+      console.error('Client: Error fetching transactions:', error);
+      setError(`Failed to load transactions. ${error instanceof Error ? error.message : 'Please try again.'}`);
     } finally {
       setIsLoading(false);
     }
