@@ -8,7 +8,7 @@
 
 *Track expenses • Set budgets • Gain insights • Make informed financial decisions*
 
-[🚀 Live Demo](https://personalfinancevisualizer-gamma.vercel.app/) • [📖 Documentation](#features) • [🛠️ Setup](#setup-instructions)
+[🚀 Live Demo](https://personalfinancevisualizer-gamma.vercel.app/) 
 
 </div>
 
