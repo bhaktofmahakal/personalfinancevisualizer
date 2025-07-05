@@ -31,6 +31,28 @@ yarn-error.log*
 # vercel
 .vercel
 
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# editor directories
+.vscode/
+.idea/
+
+# misc
+.DS_Store
+*.pem
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
