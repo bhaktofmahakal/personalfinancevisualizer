@@ -143,6 +143,13 @@ To populate the application with sample data for testing:
 
 ## Deployment
 
+This project can be easily deployed on Vercel:
+
+1. Push your code to a GitHub repository
+2. Connect your repository to Vercel
+3. Add your environment variables in the Vercel dashboard:
+   - `MONGODB_URI`: Your MongoDB connection string
+4. Deploy!
 
 ## Features Implemented
 
